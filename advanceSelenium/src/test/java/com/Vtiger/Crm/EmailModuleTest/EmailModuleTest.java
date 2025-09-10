@@ -25,7 +25,7 @@ public class EmailModuleTest extends BaseClass {
 		String title2 = "";
 		Thread.sleep(1000);
 
-		// compose mail's window's instance that is "mainwindow"
+		// compose mail's window's instance that is "main window"
 		String mainwindow = driver.getWindowHandle();
 
 		EmailModulePage EmailModulePage2 = new EmailModulePage(driver);
