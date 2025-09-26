@@ -1,69 +1,28 @@
 package com.Vtiger.CreateOrganizationConfirmTest;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.time.Duration;
-import java.util.Properties;
 import java.util.Random;
 import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
 
-import com.Vtiger.ContactPage.LoginPage;
 import com.Vtiger.CreateOpportunitiesConfirmPage.CreateOpportunitiesConfirmPage;
 import com.Vtiger.CreateOpportunitiesPage.CreateOpportunitiesPage;
-import com.Vtiger.CreateOpportunitiesTest.CreateOpportunitiesTest;
 import com.google.common.io.Files;
+import com.tyss.crm.GenaricUtility.BaseClass;
 
-public class CreateOpportunitiesConfirmTest extends CreateOpportunitiesTest {
+public class CreateOpportunitiesConfirmTest extends BaseClass {
 
-	public static void main(String[] args) throws IOException, InterruptedException {
+	@Test
+	public void CreateOpportunitiesConfirm_Test() throws Exception {
 
-		WebDriver driver = null;
-		FileInputStream fis = new FileInputStream(
-				"E:\\A8_QSPIDER SELENIUM LEARNING\\advanceSelenium_15-07-2025\\src\\test\\resources\\CommonData.properties");
-		Properties prop = new Properties();
-		prop.load(fis);
+		System.out.println("Successful Login Done");
 
-		String BROWSER = prop.getProperty("browser");
-		String URL = prop.getProperty("url");
-		String USERNAME = prop.getProperty("un");
-		String PASSWORD = prop.getProperty("pwd");
-
-		if (BROWSER.equals("chrome")) {
-			driver = new ChromeDriver();
-			driver.get(URL);
-			System.out.println("Browser Opened");
-		}
-
-		else if (BROWSER.equals("firefox")) {
-			driver = new FirefoxDriver();
-			driver.get(URL);
-			System.out.println("Browser Opened");
-		}
-
-		else {
-			driver = new ChromeDriver();
-			driver.get(URL);
-			System.out.println("Browser Opened");
-		}
-
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
-		LoginPage lp = new LoginPage(driver);
-		lp.login(USERNAME, PASSWORD);
-		System.out.println("***** Login Successful *****");
-
-		Thread.sleep(1000);
 		Random r = new Random();
 		int rannumber = r.nextInt(200);
 
@@ -103,7 +62,7 @@ public class CreateOpportunitiesConfirmTest extends CreateOpportunitiesTest {
 
 				Thread.sleep(2000);
 				WebElement search = driver.findElement(By.xpath("//input[@id='search_txt']"));
-				search.sendKeys("thanveer3141", Keys.ENTER);
+				search.sendKeys("Amit_505", Keys.ENTER);
 
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("//table[@class='small']//descendant::a[@id='1']")).click();
@@ -179,11 +138,10 @@ public class CreateOpportunitiesConfirmTest extends CreateOpportunitiesTest {
 
 		TakesScreenshot takescreenshot = (TakesScreenshot) driver;
 		File src = takescreenshot.getScreenshotAs(OutputType.FILE);
-		File desc = new File(".//text.png");
+		File desc = new File(".//COCT.png");
 		Files.copy(src, desc);
 
 		Thread.sleep(3000);
-		driver.close();
 
 	}
 

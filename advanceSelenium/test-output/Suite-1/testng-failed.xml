@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite-1]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="test-Runner-firefox(failed)">
+    <parameter name="BROWSER" value="firefox"/>
+    <classes>
+      <class name="com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="logout"/>
+          <include name="closeBrowser"/>
+          <include name="LeadConfirmTest"/>
+          <include name="loginTest"/>
+          <include name="afterSuit"/>
+          <include name="beforeSuit"/>
+        </methods>
+      </class> <!-- com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest -->
+    </classes>
+  </test> <!-- test-Runner-firefox(failed) -->
+</suite> <!-- Failed suite [Suite-1] -->

@@ -43,7 +43,7 @@ public class CreateOpportunitiesPage {
 	@FindBy(xpath = "//img[@id='jscal_trigger_closingdate']")
 	private WebElement expectedclosedate;
 
-	@FindBy(xpath = "//tr[@class='daysrow']//descendant::td[@class='day weekend'  and contains(., '31')]")
+	@FindBy(xpath = "//tr[@class='daysrow']//td[@class='day selected' and contains(., '31')]")
 	private WebElement chosendate;
 
 	@FindBy(xpath = "//td[@class='dvtCellInfo' ] //descendant::select[@name='sales_stage']")

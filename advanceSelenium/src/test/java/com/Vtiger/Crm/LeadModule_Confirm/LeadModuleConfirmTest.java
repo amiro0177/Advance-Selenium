@@ -41,8 +41,11 @@ public class LeadModuleConfirmTest extends BaseClass {
 		LeadModuleConfirmPage lmcp5 = new LeadModuleConfirmPage(driver);
 		lmcp5.getSelectsearchresultcheckbox().click();
 		
-		LeadModuleConfirmPage lmcp6=new LeadModuleConfirmPage(driver);
+		//LeadModuleConfirmPage lmcp6=new LeadModuleConfirmPage(driver);
 		//lmcp6.getDeletebutton();
+		
+		
+		
 
 	}
 

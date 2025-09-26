@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Suite-1">
+	<test name="test-runner1-chrome">
+		<parameter name="BROWSER" value="chrome">
+			<classes>
+				<class name="com.Vtiger.Crm.LeadModule.LeadModuleTest" />
+				<class name="com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest" />
+
+			</classes>
+		</parameter>
+	</test>
+
+	<test name="test-Runner2-firefox">
+		<parameter name="BROWSER" value="firefox">
+			<classes>
+				<class name="com.Vtiger.Crm.LeadModule.LeadModuleTest" />
+				<class name="com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest" />
+			</classes>
+		</parameter>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

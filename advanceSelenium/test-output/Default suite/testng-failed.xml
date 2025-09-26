@@ -3,15 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Vtiger.Crm.TroubleTickets.TroubleTicketsTest">
+      <class name="com.Vtiger.Document.DocumentsTest">
         <methods>
           <include name="launchBrowser"/>
-          <include name="troubleTicketsTest"/>
+          <include name="logout"/>
+          <include name="documentTest"/>
+          <include name="closeBrowser"/>
           <include name="loginTest"/>
-          <include name="afterSuit"/>
           <include name="beforeSuit"/>
+          <include name="afterSuit"/>
         </methods>
-      </class> <!-- com.Vtiger.Crm.TroubleTickets.TroubleTicketsTest -->
+      </class> <!-- com.Vtiger.Document.DocumentsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

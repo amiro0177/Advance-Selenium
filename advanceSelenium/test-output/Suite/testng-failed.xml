@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="BROWSER" value="chrome"/>
+    <classes>
+      <class name="com.Vtiger.Crm.LeadModule.LeadModuleTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="logout"/>
+          <include name="closeBrowser"/>
+          <include name="loginTest"/>
+          <include name="leadTest"/>
+          <include name="afterSuit"/>
+          <include name="beforeSuit"/>
+        </methods>
+      </class> <!-- com.Vtiger.Crm.LeadModule.LeadModuleTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)">
+    <parameter name="BROWSER" value="firefox"/>
+    <classes>
+      <class name="com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="logout"/>
+          <include name="LeadConfirmTest"/>
+          <include name="closeBrowser"/>
+          <include name="loginTest"/>
+          <include name="beforeSuit"/>
+          <include name="afterSuit"/>
+        </methods>
+      </class> <!-- com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest -->
+      <class name="com.Vtiger.Crm.LeadModule.LeadModuleTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="logout"/>
+          <include name="closeBrowser"/>
+          <include name="loginTest"/>
+          <include name="leadTest"/>
+          <include name="beforeSuit"/>
+          <include name="afterSuit"/>
+        </methods>
+      </class> <!-- com.Vtiger.Crm.LeadModule.LeadModuleTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

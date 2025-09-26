@@ -12,7 +12,7 @@
   
   
   <!-- This Test will open on Firefox-->
-  <test thread-count="2" name="Test2">
+  <test   name="Test2">
   <parameter name="browser" value="firefox"> </parameter>
     <classes>
       <class name="com.Vtiger.Crm.LeadModule.LeadModuleTest"/>
