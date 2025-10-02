@@ -91,6 +91,9 @@ public class ProductModuleTest extends BaseClass {
 			
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			js.executeScript("window.scrollBy(0,500)");
+			
+			 
+			
 
 			Thread.sleep(2000);
 
