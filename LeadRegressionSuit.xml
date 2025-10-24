@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Lead Regression Suite-2">
+<parameter name="BROWSER" value="chrome">
+  <test thread-count="2" name="Test -Runner-1">
+    <classes>
+      <class name="com.Vtiger.Crm.LeadModule.LeadModuleTest"/>
+      <class name="com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest"/>
+       
+    </classes>
+  </test>
+  </parameter>
+  <!-- Test -->
+</suite> <!-- Suite -->
