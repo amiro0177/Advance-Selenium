@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Lead Regression Suite-2]" guice-stage="DEVELOPMENT">
+  <parameter name="BROWSER1" value="chrome"/>
+  <test thread-count="5" name="Test -Runner-1(failed)">
+    <classes>
+      <class name="com.Vtiger.Crm.LeadModule.LeadModuleTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="logout"/>
+          <include name="closeBrowser"/>
+          <include name="loginTest"/>
+          <include name="leadTest"/>
+          <include name="afterSuit"/>
+          <include name="beforeSuit"/>
+        </methods>
+      </class> <!-- com.Vtiger.Crm.LeadModule.LeadModuleTest -->
+      <class name="com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="logout"/>
+          <include name="closeBrowser"/>
+          <include name="LeadConfirmTest"/>
+          <include name="loginTest"/>
+          <include name="afterSuit"/>
+          <include name="beforeSuit"/>
+        </methods>
+      </class> <!-- com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest -->
+    </classes>
+  </test> <!-- Test -Runner-1(failed) -->
+</suite> <!-- Failed suite [Lead Regression Suite-2] -->
