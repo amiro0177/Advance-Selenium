@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import com.Vtiger.Crm.EmailPage.EmailModulePage;
-import com.tyss.crm.GenaricUtility.BaseClass;
+import com.tyss.crm.GenericUtility.BaseClass;
 
 public class EmailModuleTest extends BaseClass {
 

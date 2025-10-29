@@ -1,4 +1,4 @@
-package com.tyss.crm.GenaricUtility;
+package com.tyss.crm.GenericUtility;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package com.tyss.crm.GenaricUtility;
+package com.tyss.crm.GenericUtility;
 
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;

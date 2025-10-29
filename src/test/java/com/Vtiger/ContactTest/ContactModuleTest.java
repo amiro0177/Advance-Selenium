@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 import com.Vtiger.ContactPage.ContactModulePage;
 import com.Vtiger.ContactPage.CreateContact_ConfirmPage;
 import com.Vtiger.ContactPage.LoginPage;
-import com.tyss.crm.GenaricUtility.WebDriverUtility;
+import com.tyss.crm.GenericUtility.WebDriverUtility;
 
 public class ContactModuleTest extends WebDriverUtility {
 

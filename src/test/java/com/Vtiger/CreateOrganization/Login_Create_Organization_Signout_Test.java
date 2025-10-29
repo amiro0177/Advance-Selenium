@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.Vtiger.Login_CreateOrg_logout.CreateOrganizationPage;
 import com.Vtiger.Login_CreateOrg_logout.HomePage;
 import com.Vtiger.Login_CreateOrg_logout.OrganizationPage;
-import com.tyss.crm.GenaricUtility.BaseClass;
+import com.tyss.crm.GenericUtility.BaseClass;
 
 public class Login_Create_Organization_Signout_Test extends BaseClass {
 

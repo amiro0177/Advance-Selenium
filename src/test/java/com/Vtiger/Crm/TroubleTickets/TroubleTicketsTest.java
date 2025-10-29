@@ -3,7 +3,7 @@ package com.Vtiger.Crm.TroubleTickets;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-import com.tyss.crm.GenaricUtility.BaseClass;
+import com.tyss.crm.GenericUtility.BaseClass;
 
 public class TroubleTicketsTest extends BaseClass {
 

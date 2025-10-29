@@ -18,7 +18,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.Vtiger.ContactPage.LoginPage;
 import com.Vtiger.CreateOpportunitiesPage.CreateOpportunitiesPage;
-import com.tyss.crm.GenaricUtility.JavaUtility;
+import com.tyss.crm.GenericUtility.JavaUtility;
 
 public class CreateOpportunitiesTest extends JavaUtility {
 

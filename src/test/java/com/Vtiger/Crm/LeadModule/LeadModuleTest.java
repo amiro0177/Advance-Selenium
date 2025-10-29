@@ -11,7 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-import com.tyss.crm.GenaricUtility.BaseClass;
+import com.tyss.crm.GenericUtility.BaseClass;
 
 public class LeadModuleTest<WorkBook> extends BaseClass {
 

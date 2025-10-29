@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 import com.Vtiger.CreateOpportunitiesConfirmPage.CreateOpportunitiesConfirmPage;
 import com.Vtiger.CreateOpportunitiesPage.CreateOpportunitiesPage;
 import com.google.common.io.Files;
-import com.tyss.crm.GenaricUtility.BaseClass;
+import com.tyss.crm.GenericUtility.BaseClass;
 
 public class CreateOpportunitiesConfirmTest extends BaseClass {
 
