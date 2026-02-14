@@ -12,6 +12,10 @@ public class LeadModuleConfirmTest extends BaseClass {
 
 	@Test
 	public void LeadConfirmTest() throws Exception {
+		
+		/* if you need to create multiple object reference,
+		 *  then create multiple object for the single POM class.
+		 */
 
 		LeadModuleConfirmPage lmcp1 = new LeadModuleConfirmPage(driver);
 		Thread.sleep(1000);
