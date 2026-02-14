@@ -15,7 +15,7 @@ import com.tyss.crm.GenericUtility.BaseClass;
 
 public class LeadModuleTest<WorkBook> extends BaseClass {
 
-	@Test()
+	@Test
 	public void leadTest() throws Exception {
 
 		LeadModulePage lmp1 = new LeadModulePage(driver);

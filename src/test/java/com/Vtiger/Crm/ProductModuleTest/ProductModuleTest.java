@@ -36,11 +36,14 @@ public class ProductModuleTest extends BaseClass {
 		Thread.sleep(1000);
 		ProductsPage productsPage4 = new ProductsPage(driver);
 		WebElement sel = productsPage4.getProductactive();
+		
 		if (sel.isSelected()) {
+			
 			System.out.println("This CheckBox is Selected");
 			// return;
 
 		} else {
+			
 			productsPage4.getProductactive().click();
 
 		}
@@ -60,7 +63,6 @@ public class ProductModuleTest extends BaseClass {
 		 
 		productsPage6.getVendorNamePlusSign().click();
 
-		
 		Set<String> windowhandlesId = driver.getWindowHandles();
 
 		for (String id : windowhandlesId) {
@@ -89,8 +91,8 @@ public class ProductModuleTest extends BaseClass {
 			Thread.sleep(2000);
 
 			
-			JavascriptExecutor js = (JavascriptExecutor) driver;
-			js.executeScript("window.scrollBy(0,500)");
+//			JavascriptExecutor js = (JavascriptExecutor) driver;
+//			js.executeScript("window.scrollBy(0,500)");
 			
 			 
 			
