@@ -1,14 +1,18 @@
 package com.tyss.crm.GenericUtility;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.HashMap;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtility {
 
@@ -19,11 +23,40 @@ public class ExcelUtility {
 	 * @param rowNum
 	 * @param cellNum
 	 * @return
+	 * @throws Exception 
 	 * @throws IOException
 	 * @throws EncryptedDocumentException
 	 * @throws Throwable
 	 */
 
+	
+	
+	
+	
+	// If you have any Issue with it, we can remove it
+	public String fromExcel(String sheetname, int rownum,int cellnum) throws Exception {
+		
+		FileInputStream fis=new FileInputStream("/advanceSelenium/src/test/resources/Product_Data_100_plus.xlsx");
+		
+		XSSFWorkbook wb=new XSSFWorkbook(fis);
+		Sheet sheet=wb.getSheet("ProductData");
+		
+		int rowcount=sheet.getPhysicalNumberOfRows();
+		for(int i=1;i<rowcount;i++) {
+			String value=sheet.getRow(i).getCell(cellnum).getStringCellValue();
+			 return value;
+		}
+		return sheetname;
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	// This cann't be remove
 	public String readDataFromExcelSheet(String sheetName, int rowNum, int cellNum)
 			throws EncryptedDocumentException, IOException {
 

@@ -33,23 +33,24 @@ public class BaseClass {
 		System.out.println("***** Connecting to Data Base *****");
 	}
 
-	@Parameters("BROWSER")
+	//@Parameters("BROWSER")
 	@BeforeClass
-	public void launchBrowser(String browser) throws IOException {
-
+	public void launchBrowser() throws IOException {
+		//String browser
 		System.out.println("Launching the BROWSER");
-		 String BROWSER=browser;
+		//String BROWSER=browser;
 
 		String BROWSER1 = fileutility.readDataFromPropertiesFile("browser");
-		if (BROWSER.equalsIgnoreCase("chrome")) {
+		
+		if (BROWSER1.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
 		}
 
-		else if (BROWSER.equalsIgnoreCase("firefox")) {
+		else if (BROWSER1.equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
 
 		} else {
-			// driver = new EdgeDriver();
+			driver=new ChromeDriver();
 
 		}
 

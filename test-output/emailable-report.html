@@ -8,65 +8,39 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test1</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">146</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Test2</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">52</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">0</th><th class="num attn">4</th><th class="num">0</th><th class="num">0</th><th class="num">198</th><th colspan="2"></th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">910</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.Vtiger.Crm.LeadModule.LeadModuleTest</td><td><a href="#m0">launchBrowser</a></td><td rowspan="1">1768842061843</td><td rowspan="1">-1768842061843</td></tr><tr class="failedodd"><td rowspan="1">com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest</td><td><a href="#m1">launchBrowser</a></td><td rowspan="1">1768842061926</td><td rowspan="1">-1768842061926</td></tr><tr><th colspan="4">Test1 &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">com.Vtiger.Crm.LeadModule.LeadModuleTest</td><td><a href="#m2">closeBrowser</a></td><td rowspan="1">1768842061914</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">loginTest</a></td><td rowspan="1">1768842061892</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">logout</a></td><td rowspan="1">1768842061903</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="3">com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest</td><td><a href="#m5">closeBrowser</a></td><td rowspan="1">1768842061951</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m6">loginTest</a></td><td rowspan="1">1768842061933</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m7">logout</a></td><td rowspan="1">1768842061948</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test1 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.Vtiger.Crm.LeadModule.LeadModuleTest</td><td><a href="#m8">leadTest</a></td><td rowspan="1">1768842061896</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest</td><td><a href="#m9">LeadConfirmTest</a></td><td rowspan="1">1768842061937</td><td rowspan="1">1</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Test2 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.Vtiger.Crm.LeadModule.LeadModuleTest</td><td><a href="#m10">launchBrowser</a></td><td rowspan="1">1768842062489</td><td rowspan="1">-1768842062489</td></tr><tr class="failedodd"><td rowspan="1">com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest</td><td><a href="#m11">launchBrowser</a></td><td rowspan="1">1768842062516</td><td rowspan="1">-1768842062516</td></tr><tr><th colspan="4">Test2 &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">com.Vtiger.Crm.LeadModule.LeadModuleTest</td><td><a href="#m12">closeBrowser</a></td><td rowspan="1">1768842062513</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m13">loginTest</a></td><td rowspan="1">1768842062497</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m14">logout</a></td><td rowspan="1">1768842062509</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="3">com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest</td><td><a href="#m15">closeBrowser</a></td><td rowspan="1">1768842062536</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m16">loginTest</a></td><td rowspan="1">1768842062523</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m17">logout</a></td><td rowspan="1">1768842062532</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test2 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.Vtiger.Crm.LeadModule.LeadModuleTest</td><td><a href="#m18">leadTest</a></td><td rowspan="1">1768842062501</td><td rowspan="1">1</td></tr><tr class="skippedodd"><td rowspan="1">com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest</td><td><a href="#m19">LeadConfirmTest</a></td><td rowspan="1">1768842062525</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">dataReadJson.ReadData_Json</td><td><a href="#m0">amazonPage</a></td><td rowspan="1">1782492735358</td><td rowspan="1">863</td></tr></tbody>
 </table>
-<h2>Test1</h2><h3 id="m0">com.Vtiger.Crm.LeadModule.LeadModuleTest#launchBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;BROWSER&apos; is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
-in E:\Advance-Selenium\advanceSelenium\leadSmokeTest.xml
+<h2>Default test</h2><h3 id="m0">dataReadJson.ReadData_Json#amazonPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.internal.reflect.MethodMatcherException: 
+[public void dataReadJson.ReadData_Json.amazonPage(java.lang.String,java.lang.String) throws java.lang.Exception] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: amazonPage([java.lang.String arg0, java.lang.String arg1])
+Arguments: [(org.apache.poi.xssf.usermodel.XSSFCell) Monitor Model 1,(org.apache.poi.xssf.usermodel.XSSFCell) HP]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:909)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:37)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest#launchBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;BROWSER&apos; is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
-in E:\Advance-Selenium\advanceSelenium\leadSmokeTest.xml
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.Vtiger.Crm.LeadModule.LeadModuleTest#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.Vtiger.Crm.LeadModule.LeadModuleTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.Vtiger.Crm.LeadModule.LeadModuleTest#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.Vtiger.Crm.LeadModule.LeadModuleTest#leadTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;BROWSER&apos; is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
-in E:\Advance-Selenium\advanceSelenium\leadSmokeTest.xml
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest#LeadConfirmTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;BROWSER&apos; is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
-in E:\Advance-Selenium\advanceSelenium\leadSmokeTest.xml
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test2</h2><h3 id="m10">com.Vtiger.Crm.LeadModule.LeadModuleTest#launchBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;BROWSER&apos; is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
-in E:\Advance-Selenium\advanceSelenium\leadSmokeTest.xml
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest#launchBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;BROWSER&apos; is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
-in E:\Advance-Selenium\advanceSelenium\leadSmokeTest.xml
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">com.Vtiger.Crm.LeadModule.LeadModuleTest#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">com.Vtiger.Crm.LeadModule.LeadModuleTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m14">com.Vtiger.Crm.LeadModule.LeadModuleTest#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m15">com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m16">com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m17">com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m18">com.Vtiger.Crm.LeadModule.LeadModuleTest#leadTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;BROWSER&apos; is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
-in E:\Advance-Selenium\advanceSelenium\leadSmokeTest.xml
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m19">com.Vtiger.Crm.LeadModule_Confirm.LeadModuleConfirmTest#LeadConfirmTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;BROWSER&apos; is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
-in E:\Advance-Selenium\advanceSelenium\leadSmokeTest.xml
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -97,10 +97,10 @@ public class TroubleTicketsTest extends BaseClass {
 
 	}
 
-	// Second Test Cases for Confirm Trouble Tickets
-	@Test
-	public void confirmTroubleTickets() {
-
-	}
+//	// Second Test Cases for Confirm Trouble Tickets
+//	@Test
+//	public void confirmTroubleTickets() {
+//
+//	}
 
 }
